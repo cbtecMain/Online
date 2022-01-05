@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>We're working on it | cbtec.online</title>
+    <link rel="shortcut icon icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+	<script src="javascript.js"></script>
+	<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+	<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+	<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+</head>
+<body bgcolor="#2B2B2B" text="white" position="absolute" data-aos-duration="1200" data-aos-easing="ease" data-aos-delay="0" style="transition-timing-function: ease; transition-duration: 1.2s;">
+<style>
+    html {
+  		scroll-behavior: smooth;
+ 	}
+    .cbtec_online-head {
+    	line-height: 100px;
+		font-size: 100px;
+		font-family: 'Barlow Condensed', sans-serif;
+		text-align: center;
+    }
+
+    .cbtec_online-subhead {
+    	font-size: 50px;
+		line-height: 45px;
+		font-family: 'Barlow Condensed', sans-serif;
+		text-align: center;
+    }
+
+    #down {
+    }
+
+    .arrow-online {
+    	position: absolute; 
+    	width: 50px;
+    	margin-top: 45%;
+    	z-index: 91;
+    }
+
+    .arrow-online:focus {
+    	-webkit-animation: arrow-flip 1s ease-in-out forwards;
+    			animation: arrow-flip 1s ease-in-out forwards;
+    }
+
+    .arrow-online:active {
+    	-webkit-animation: none;
+    			animation: none;
+    }
+
+    @keyframes arrow-flip {
+    	100% {
+    		-webkit-transform: rotate(180deg);
+    	}
+    }
+
+    [data-aos="fade"] {
+    	opacity: 0;
+    	transition-property: opacity;
+    	transition-duration: 0.5s;
+    }
+
+    [data-aos="fade"].aos-animate {
+    	opacity: 1;
+    }
+
+    .favicon-holder-home {
+    	margin: auto;
+    	width: 23%;
+    }
+
+
+	a:visited{ 
+		color: #00D0FF;
+	}
+
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            border: 5px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #AAAAAA;
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: #8F8F8F;
+            }
+    
+    .cbtec_online-paragraph {
+    	font-size: 35px;
+		line-height: 45px;
+		font-family: 'Barlow Condensed', sans-serif;
+		text-align: center;
+		min-width: 500px;
+    }
+</style>
+<script id="rendered-js">
+	AOS.init({
+  		duration: 1200,
+	})
+</script>
+<script>
+	var myvid = $('#myVid')[0];
+	$(window).scroll(function(){
+  		var scroll = $(this).scrollTop();
+  		scroll > 300 ? vid.pause() : vid.play()
+	})
+</script>
+<div class="load-wrapper">
+    <div class="load-elements">
+        <div class="load"></div>
+        <p class="paragraph3">Just a sec..</p>
+    </div>
+</div>
+	<br>
+	<div id="Nav" style="background-color:#2B2B2B; height: 3%; width: 100%; margin-top: 0%; position: absolute; z-index: 99;">
+	</div>
+
+	<div class="favicon-holder-home">
+		<img src="img/favicon.png" style="width: 25%; position: absolute; z-index: 90; margin-top: 9%;">
+	</div>
+	<video id="vid" autoplay muted loop width="1920" height="1080" style="position: absolute;">
+		<source src="vid/online-hp.mp4" type="video/mp4">
+		<div class="load"></div>
+		Your Browser does not support/allow HTML5 video. Please upgrade or allow permissions.
+		<!---- The springlocks better not fail this time. --->
+	</video>
+	<center><div id="arrow-online-div" tabindex="0"><a href="#down"><img src="img/down_arrow.png" class="arrow-online"></div></center></a>
+	<div id="overlay" style="position: absolute; margin-top: 45%; background-color: #2B2B2B; width: 100%;">
+    	<center><h1 class="cbtec_online-head" data-aos="fade">cbtec.online</h1> </center>
+    	<center><h2 class="cbtec_online-subhead" data-aos="fade"><i>A new project by <a href="cbtec.org" style="text-decoration: none; color: #00D0FF;">cbtec.org</a></i></h2></center>
+    	<div class="load2"></div>
+    	<div id="down" data-aos="fade">
+    		<p class="cbtec_online-paragraph">
+        		cbtec.online is a brand new site from the creator of cbtec.org. <br />
+        		I built cbtec.online today as a testing platform for features that will soon be released to cbtec.org homepage. <br />
+        		It is a public viewing of 'early access' content that will be released to cbtec.org after bug fixes and feedback. <br />
+        		The current homepage you see on cbtec.online will soon make it to cbtec.org after testing. Here you will find beta content <br/>
+        		so please do expect <i><b> lots </b></i> of bugs in your experience here. <br/>
+        		I created this site to purposely gain feedback on upcoming features to see what the community likes, and <i><b> does not. </i></b><br/>
+        	    The only features that you will not see on cbtec.online are features that require approval from other audiences (partners, etc)</br>
+        	    Please do bare in mind that the content you see on here will not be <b><i>immediate.</i></b> as there is latency of cache <br>
+        	    server uploads and me <i> actually coding. </i>
+    		</p>
+		</div>
+	<div>
+		<div>
+			<div>
+				<!--- theres nothing here -->
+				<div>
+					<div>
+						<!---- i told you theres nothing here -->
+						<div>
+							<!--- why do you persist? -->
+							<div>
+								<div>
+									<!--- FINE HAVE SOMETHING --->
+									<div>
+										<!--- https://youtu.be/dQw4w9WgXcQ -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>							
+    <br />
+    <br /><br />
+    <div id="issues-footer" data-aos="fade">
+    	<ins><center><h2 class="subhead2" >Want to resolve a issue in the media I provide?</h2>
+    	</center></ins>
+    	<center>
+        	<p class="paragraph">
+            	support@cbtec.org
+        	</p>
+    	</center>
+	</div>
+    <br><br /><br /><br />
+    <br />
+
+    <center>
+        <p>
+            © cbtec <script>document.write(new Date().getFullYear())</script>
+        </p>
+    </center>
+    <center>
+        <p>
+            Copyright <script>document.write(new Date().getFullYear())</script> cbtec. Reproduction is not permitted, for more info on copyright <a href="#">click here.</a>
+            <a target="_blank" href="https://icons8.com/icon/2760/expand-arrow">Expand Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+    </div>
+    </center>
+</body>
+</html>
