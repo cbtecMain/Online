@@ -24,14 +24,16 @@
   		scroll-behavior: smooth;
  	}
     .cbtec_online-head {
-    	line-height: 100px;
-		font-size: 100px;
+    	line-height: 1em;
+		font-size: 6em;
 		font-family: 'Barlow Condensed', sans-serif;
 		text-align: center;
+		width: 95%;
+		word-wrap:  break-word;
     }
 
     .cbtec_online-subhead {
-    	font-size: 50px;
+    	font-size: 3em;
 		line-height: 45px;
 		font-family: 'Barlow Condensed', sans-serif;
 		text-align: center;
@@ -102,13 +104,21 @@
             ::-webkit-scrollbar-thumb:hover {
                 background-color: #8F8F8F;
             }
+
+    .cbtec_online-devicesmall {
+			display: none;
+			font-size: 150%;
+			line-height: 150%;
+			font-family: 'Barlow Condensed', sans-serif;
+			text-align: center;
+		}
     
     .cbtec_online-paragraph {
-    	font-size: 35px;
-		line-height: 45px;
+    	font-size: 2.2em;
+		line-height: 1em;
 		font-family: 'Barlow Condensed', sans-serif;
 		text-align: center;
-		min-width: 500px;
+		width: 95%;
     }
 	
     @media only screen and (max-width: 767px) {
@@ -120,7 +130,38 @@
             width: 100%;
         }
 
+    @media only screen and (max-device-width : 700px) {
+		.mobileDisable {
+			display: none;
+		}
+	} 
 
+	@media only screen and (max-device-width : 250px) {
+		.cbtec_online-head {
+			display: none;
+		}
+		.cbtec_online-subhead {
+			display: none;
+		}
+		.cbtec_online-paragraph {
+			display: none;
+		}
+		.cbtec_online-devicesmall {
+			display: block;
+		}
+		.arrow-online {
+			display: none;
+		}
+	}
+
+	.cbtec_online-menu {
+		font-size: 2.2em;
+		line-height: 1em;
+		position: absolute;
+		top: -90%;
+		font-family: 'Barlow Condensed', sans-serif;	
+		width: 95%;
+	}  
 </style>
 <script id="rendered-js">
 	AOS.init({
@@ -141,13 +182,29 @@
     </div>
 </div>
 	<br>
-	<div id="Nav" style="background-color:#2B2B2B; height: 3%; width: 100%; margin-top: 0%; position: absolute; z-index: 99;">
-	</div>
+	<div id="Nav" style="background-color:#2B2B2B; height: 4%; width: 100%; top: 0%; position: absolute; z-index: 99;"><nav class="denynav">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+            	<b>
+                	<li><a href="index.html" class="hamburger-text">Home</a></li>
+                	<li><a href="#down" class="hamburger-text">Info</a></li>
+                	<li><a href="#" class="hamburger-text">PLACEHOLDER</a></li>
+                	<li><a href="#" class="hamburger-text">PLACEHOLDER</a></li>
+                	<li><a href="#" class="hamburger-text">PLACEHOLDER</a></li>
+                	<li><a href="#" class="hamburger-text">PLACEHOLDER</a></li>
+            	</b>
+            </ul>
+        </div>
+    </nav></div>
 
 	<div class="favicon-holder-home">
 		<img src="img/favicon.png" style="width: 25%; position: absolute; z-index: 90; margin-top: 9%;">
 	</div>
-	<video id="vid" autoplay muted loop width="1920" height="1080" style="position: absolute;">
+	<video id="vid" class="mobileDisable" autoplay muted loop style="position: absolute; top: 0%; width: 100%;">
 		<source src="vid/online-hp.mp4" type="video/mp4">
 		<div class="load"></div>
 		Your Browser does not support/allow HTML5 video. Please upgrade or allow permissions.
@@ -158,6 +215,7 @@
     	<center><h1 class="cbtec_online-head" data-aos="fade">cbtec.online</h1> </center>
     	<center><h2 class="cbtec_online-subhead" data-aos="fade"><i>A new project by <a href="cbtec.org" style="text-decoration: none; color: #00D0FF;">cbtec.org</a></i></h2></center>
     	<div class="load2"></div>
+    	<p class="cbtec_online-devicesmall">Your device's width is unsupported.</p>
     	<div data-aos="fade">
     		<p class="cbtec_online-paragraph">
         		cbtec.online is a brand new site from the creator of cbtec.org. <br />
