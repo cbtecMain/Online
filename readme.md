@@ -1,5 +1,5 @@
 
-<h1>An Important Update Reguarding future cbtec development projects.</h1>
+<h1>An Important Update Reguarding future cbtec Development Projects.</h1>
 
 <h4>cbtec Technologies GitHub development space has been superseded by
 a privately hosted space where future operations will continue.
